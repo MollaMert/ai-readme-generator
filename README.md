@@ -1,73 +1,97 @@
-# React + TypeScript + Vite
+# 🚀 AI README Generator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**AI README Generator** is a powerful, developer-first web application designed to create professional, high-quality `README.md` files in seconds. By leveraging state-of-the-art AI models (Gemini, OpenAI, Anthropic), it analyzes your project structure and crafts a tailored documentation experience.
 
-Currently, two official plugins are available:
+![License](https://img.shields.io/github/license/MollaMert/ai-readme-generator)
+![Stars](https://img.shields.io/github/stars/MollaMert/ai-readme-generator)
+![Issues](https://img.shields.io/github/issues/MollaMert/ai-readme-generator)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **🤖 Multi-Provider Support:** Bring Your Own Key (BYOK) for Google Gemini, OpenAI, and Anthropic.
+- **📁 Smart Context Analysis:** Paste a **GitHub URL** or select a **Local Folder** to let AI "see" your project structure and `package.json`.
+- **🎨 Glassmorphism UI:** A sleek, modern, and dark-themed interface built with the latest Tailwind CSS v4.
+- **⚡ Live Preview:** Real-time Markdown rendering to see exactly how your README looks before exporting.
+- **📋 One-Click Export:** Copy to clipboard or download as a `.md` file instantly.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Getting Started (For Developers)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- An API Key from [Google AI Studio](https://aistudio.google.com/), [OpenAI](https://platform.openai.com/), or [Anthropic](https://console.anthropic.com/).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Installation
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/MollaMert/ai-readme-generator.git
+   cd ai-readme-generator
+   ```
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in browser:**
+   Navigate to [http://localhost:5173](http://localhost:5173).
+
+---
+
+## 📖 How to Use (Basic Users)
+
+You don't need to be a coding wizard to use this!
+
+1. **Open the App:** Launch the site in your browser.
+2. **Choose Your Source:**
+   - **Manual:** Just type your project name and description.
+   - **GitHub:** Paste your public repo link to let AI scan your files.
+   - **Folder:** Select your project folder from your computer (Files are **never** uploaded, we only scan headers locally for privacy).
+3. **Select Provider:** Choose your AI model (e.g., Gemini) and paste your **API Key**.
+4. **Tune the Tone:** Choose between "Professional", "Friendly", "Minimalist", or even "Pirate"!
+5. **Generate:** Click the button and watch the magic happen.
+6. **Save:** Copy the result or download your brand new `README.md`.
+
+---
+
+## 🌐 Deployment (Hosting)
+
+Want to host this yourself for free?
+
+1. Push this code to your own GitHub repository.
+2. Sign in to [Vercel](https://vercel.com).
+3. Import your repository and click **Deploy**.
+4. Done! You have your own live AI service.
+
+---
+
+## 📜 License
+
+Distributed under the **MIT License**. See `LICENSE` for more information.
+
+---
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+Developed with ❤️ by [MollaMert](https://github.com/MollaMert)
